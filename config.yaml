@@ -1,0 +1,22 @@
+data:
+  dataset: karpathy/tiny_shakespeare
+  min_freq: 5
+  seq_length: 30
+  vocab_size: 3654
+inference:
+  max_new_tokens: 50
+  temperature: 0.8
+  top_k: 10
+  top_p: 0.9
+model:
+  dropout: 0.2
+  embed_dim: 64
+  hidden_dim: 128
+  num_layers: 2
+training:
+  batch_size: 128
+  epochs: 10
+  lr: 0.002
+  patience: 3
+  wandb_project: next-word-predictor-lstm
+  wandb_run_name: lstm_fast_v1
